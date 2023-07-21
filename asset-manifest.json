@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/cafe-gelado/static/css/main.cbf4cd46.css",
-    "main.js": "/cafe-gelado/static/js/main.dbfc12bb.js",
+    "main.css": "/cafe-gelado/static/css/main.88e712d9.css",
+    "main.js": "/cafe-gelado/static/js/main.a9a3d6d6.js",
+    "static/media/icons.svg": "/cafe-gelado/static/media/icons.454ff5649354c021beac53ae854132af.svg",
     "index.html": "/cafe-gelado/index.html",
-    "main.cbf4cd46.css.map": "/cafe-gelado/static/css/main.cbf4cd46.css.map",
-    "main.dbfc12bb.js.map": "/cafe-gelado/static/js/main.dbfc12bb.js.map"
+    "main.88e712d9.css.map": "/cafe-gelado/static/css/main.88e712d9.css.map",
+    "main.a9a3d6d6.js.map": "/cafe-gelado/static/js/main.a9a3d6d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbf4cd46.css",
-    "static/js/main.dbfc12bb.js"
+    "static/css/main.88e712d9.css",
+    "static/js/main.a9a3d6d6.js"
   ]
 }
