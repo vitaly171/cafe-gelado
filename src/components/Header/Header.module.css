@@ -1,1 +1,25 @@
+.page_header {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  padding-top: 10px;
+}
 
+.page-header__container {
+  position: relative;
+}
+
+.logo {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+
+  font-family: "Titan One", sans-serif;
+  font-size: 28px;
+  color: #d41443;
+  text-transform: uppercase;
+}
+
+.logo__icon {
+  margin-right: 20px;
+}

@@ -1,13 +1,20 @@
 import s from "./Header.module.css";
+import React from "react";
+import Icons from "../../img/icons.svg";
 
 export default function Header() {
   return (
     <header className={s.page_header} id="page-home">
-      <div className="container page-header__container">
+      <div className={s.page_header__container}>
         {/* Company`s Logo  */}
-        <a className="logo" href="index.html">
-          <svg className="logo__icon" width="50" height="50" aria-label="Logo">
-            <use href="images/icons.svg#logo"></use>
+        <a className={s.logo} href="index.html">
+          <svg
+            className={s.logo__icon}
+            width="50"
+            height="50"
+            aria-label="Logo"
+          >
+            <use href={`${Icons}#logo`}></use>
           </svg>
           Icecream
         </a>
