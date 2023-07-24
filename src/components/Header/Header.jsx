@@ -1,4 +1,4 @@
-import s from "./Header.module.css";
+import s from "./Header.module.scss";
 import React from "react";
 import Icons from "../../img/icons.svg";
 import classNames from "classnames";
