@@ -6,9 +6,9 @@ import classNames from "classnames";
 export default function Header() {
   return (
     <header className={s.page_header} id="page-home">
-      <div className={s.page_header__container}>
+      <div className={classNames(s.container, s.page_header__container)}>
         {/* Company`s Logo  */}
-        <a className={s.logo} href="index.html">
+        <a className={s.logo} href="/cafe-gelado/index.html">
           <svg
             className={s.logo__icon}
             width="50"
@@ -100,13 +100,13 @@ export default function Header() {
 
           {/* <!-- Buy now Button --> */}
           <button
-            className="btn btn--primary btn-buy"
+            className={classNames(s.btn, s.btn__primary, s.btn_buy)}
             type="button"
             data-buy-btn
             data-modal-open-delivery
           >
             Buy now
-            <svg className="btn-buy__icon" width="6" height="10">
+            <svg className={s.btn_buy__icon} width="6" height="10">
               <use href={`${Icons}#buy-btn`}></use>
             </svg>
           </button>
