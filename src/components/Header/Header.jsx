@@ -1,6 +1,7 @@
 import s from "./Header.module.css";
 import React from "react";
 import Icons from "../../img/icons.svg";
+import classNames from "classnames";
 
 export default function Header() {
   return (
@@ -19,13 +20,16 @@ export default function Header() {
           Icecream
         </a>
 
-        <div className="site-nav-backdrop" data-nav>
+        <div className={classNames(s.site_nav_backdrop, s.data_nav)}>
           {/* <!-- Site Navigation --> */}
-          <nav className="site-nav" id="nav">
-            <ul className="site-nav__list">
-              <li className="site-nav__item">
+          <nav className={s.site_nav} id="nav">
+            <ul className={s.site_nav__list}>
+              <li className={s.site_nav__item}>
                 <a
-                  className="site-nav__link site-nav__link--active"
+                  className={classNames(
+                    s.site_nav__link,
+                    s.site_nav__link__active
+                  )}
                   href="#page-home"
                   data-nav-link-home
                 >
@@ -33,9 +37,9 @@ export default function Header() {
                 </a>
               </li>
 
-              <li className="site-nav__item">
+              <li className={s.site_nav__item}>
                 <a
-                  className="site-nav__link"
+                  className={s.site_nav__link}
                   href="#advantages"
                   data-nav-link-advantages
                 >
@@ -43,15 +47,19 @@ export default function Header() {
                 </a>
               </li>
 
-              <li className="site-nav__item">
-                <a className="site-nav__link" href="#about" data-nav-link-about>
+              <li className={s.site_nav__item}>
+                <a
+                  className={s.site_nav__link}
+                  href="#about"
+                  data-nav-link-about
+                >
                   How it’s made?
                 </a>
               </li>
 
-              <li className="site-nav__item">
+              <li className={s.site_nav__item}>
                 <a
-                  className="site-nav__link"
+                  className={s.site_nav__link}
                   href="#products"
                   data-nav-link-products
                 >
@@ -59,9 +67,9 @@ export default function Header() {
                 </a>
               </li>
 
-              <li className="site-nav__item">
+              <li className={s.site_nav__item}>
                 <a
-                  className="site-nav__link"
+                  className={s.site_nav__link}
                   href="#locations"
                   data-nav-link-locations
                 >
@@ -73,20 +81,20 @@ export default function Header() {
         </div>
 
         {/* <!-- Header Buttons --> */}
-        <div className="page-header__buttons">
+        <div className={s.page_header__buttons}>
           {/* <!-- Site Nav Button --> */}
           <button
-            className="hamburger hamburger--collapse"
+            className={classNames(s.hamburger, s.hamburger__collapse)}
             type="button"
             aria-expanded="false"
             aria-controls="nav"
             data-nav-btn
           >
             <span
-              className="hamburger-box"
+              className={s.hamburger_box}
               aria-label="Переключатель меню навигации"
             >
-              <span className="hamburger-inner"></span>
+              <span className={s.hamburger_inner}></span>
             </span>
           </button>
 
@@ -99,32 +107,32 @@ export default function Header() {
           >
             Buy now
             <svg className="btn-buy__icon" width="6" height="10">
-              <use href="images/icons.svg#buy-btn"></use>
+              <use href={`${Icons}#buy-btn`}></use>
             </svg>
           </button>
 
           {/* <!-- Buy now Button Mobile --> */}
           <button
-            className="btn btn--primary btn-buy-mob"
+            className={classNames(s.btn, s.btn__primary, s.btn_buy_mob)}
             type="button"
             data-buy-btn-mob
             data-modal-open-mobile-delivery
           >
             Buy now
-            <svg className="btn-buy__icon" width="6" height="10">
-              <use href="images/icons.svg#buy-btn"></use>
+            <svg className={s.btn_buy__icon} width="6" height="10">
+              <use href={`${Icons}#buy-btn`}></use>
             </svg>
           </button>
 
           {/* <!-- Scroll to Top Button --> */}
           <button
-            className="btn btn--secondary btn-top"
+            className={classNames(s.btn, s.btn__secondary, s.btn_top)}
             id="myBtn"
-            onclick="topFunction()"
+            onClick="topFunction()"
             title="Go to top"
           >
             <svg width="30" height="30">
-              <use href="images/icons.svg#circle-up"></use>
+              <use href={`${Icons}#circle-up`}></use>
             </svg>
           </button>
         </div>
