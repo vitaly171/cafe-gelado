@@ -6,7 +6,7 @@ import classNames from "classnames";
 export default function Header() {
   return (
     <header className={s.page_header} id="page-home">
-      <div className={classNames(s.container, s.page_header__container)}>
+      <div className={s.container}>
         {/* Company`s Logo  */}
         <a className={s.logo} href="/cafe-gelado/index.html">
           <svg
