@@ -4,9 +4,10 @@ import Icons from "../../img/icons.svg";
 import classNames from "classnames";
 
 export default function Header() {
+  let headerClass = `${s.container} ${s.page_header__container}`;
   return (
     <header className={s.page_header} id="page-home">
-      <div className={s.container}>
+      <div className={headerClass}>
         {/* Company`s Logo  */}
         <a className={s.logo} href="/cafe-gelado/index.html">
           <svg
