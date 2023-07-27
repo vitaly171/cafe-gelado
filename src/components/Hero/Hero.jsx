@@ -37,7 +37,7 @@ export default function Hero() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <a className={classNames(s.extra_info__link, s.btn_open)} href="#">
+            <a className={classNames(s.extra_info__link, s.btn_open)} href="/">
               <svg className={s.btn_open__icon}>
                 <use href={`${Icons}#link-arrow`}></use>
               </svg>
