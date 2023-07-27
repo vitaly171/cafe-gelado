@@ -1,4 +1,4 @@
-import s from "./Hero.module.scss";
+import s from "./Hero.module.css";
 import React from "react";
 import Icons from "../../img/icons.svg";
 import classNames from "classnames";

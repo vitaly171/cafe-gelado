@@ -1,4 +1,4 @@
-import s from "./Products.module.scss";
+import s from "./Products.module.css";
 import React from "react";
 import Icons from "../../img/icons.svg";
 

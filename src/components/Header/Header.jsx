@@ -1,13 +1,13 @@
-import s from "./Header.module.scss";
+import s from "./Header.module.css";
 import React from "react";
 import Icons from "../../img/icons.svg";
 import classNames from "classnames";
+import Button from "../Button/Button";
 
 export default function Header() {
-  let headerClass = `${s.container} ${s.page_header__container}`;
   return (
     <header className={s.page_header} id="page-home">
-      <div className={headerClass}>
+      <div className={`container ${s.page_header__container}`}>
         {/* Company`s Logo  */}
         <a className={s.logo} href="/cafe-gelado/index.html">
           <svg
@@ -80,63 +80,7 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-
-        {/* <!-- Header Buttons --> */}
-        <div className={s.page_header__buttons}>
-          {/* <!-- Site Nav Button --> */}
-          <button
-            className={classNames(s.hamburger, s.hamburger__collapse)}
-            type="button"
-            aria-expanded="false"
-            aria-controls="nav"
-            data-nav-btn
-          >
-            <span
-              className={s.hamburger_box}
-              aria-label="Переключатель меню навигации"
-            >
-              <span className={s.hamburger_inner}></span>
-            </span>
-          </button>
-
-          {/* <!-- Buy now Button --> */}
-          <button
-            className={classNames(s.btn, s.btn__primary, s.btn_buy)}
-            type="button"
-            data-buy-btn
-            data-modal-open-delivery
-          >
-            Buy now
-            <svg className={s.btn_buy__icon} width="6" height="10">
-              <use href={`${Icons}#buy-btn`}></use>
-            </svg>
-          </button>
-
-          {/* <!-- Buy now Button Mobile --> */}
-          <button
-            className={classNames(s.btn, s.btn__primary, s.btn_buy_mob)}
-            type="button"
-            data-buy-btn-mob
-            data-modal-open-mobile-delivery
-          >
-            Buy now
-            <svg className={s.btn_buy__icon} width="6" height="10">
-              <use href={`${Icons}#buy-btn`}></use>
-            </svg>
-          </button>
-
-          {/* <!-- Scroll to Top Button --> */}
-          <button
-            className={classNames(s.btn, s.btn__secondary, s.btn_top)}
-            id="myBtn"
-            onClick="topFunction()"
-            title="Go to top"
-          >
-            <svg width="30" height="30">
-              <use href={`${Icons}#circle-up`}></use>
-            </svg>
-          </button>
-        </div>
+        <Button />
       </div>
     </header>
   );
