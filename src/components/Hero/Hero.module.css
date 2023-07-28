@@ -175,6 +175,57 @@
   margin-bottom: 62px;
 }
 
+.store_list__wrapper {
+  position: absolute;
+  right: 6px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.store_list__number {
+  font-family: Titan One, sans-serif;
+  font-size: 46px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  margin-bottom: 0;
+}
+
+.store_list__name {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.hero__image__main {
+  position: absolute;
+  display: block;
+  left: 475px;
+  right: -62px;
+  bottom: 19px;
+  width: 538px;
+  height: 538px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  transform: translate(200px);
+  opacity: 0;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero__image__main:after {
+  background-image: url(/src/img/hero1_desktop_@1x.png);
+  bottom: -75px;
+  width: 236px;
+  height: 557px;
+  left: 45%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .active {
   transform: translate(0);
   opacity: 1;

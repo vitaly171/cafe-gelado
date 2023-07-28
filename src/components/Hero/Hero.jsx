@@ -51,18 +51,18 @@ export default function Hero() {
         <ul className={classNames(s.store_list, s.active)}>
           <li className={s.store_list__item}>
             <div className={s.store_list__wrapper}>
-              <p className={classNames(s.store_list__number, s.counter)}>16</p>
+              <p className={classNames(s.counter, s.store_list__number)}>16</p>
               <p className={s.store_list__name}>cafes</p>
             </div>
           </li>
           <li className={s.store_list__item}>
             <div className={s.store_list__wrapper}>
-              <p className={classNames(s.store_list__number, s.counter)}>23</p>
+              <p className={classNames(s.counter, s.store_list__number)}>23</p>
               <p className={s.store_list__name}>food trucks</p>
             </div>
           </li>
         </ul>
-        <div className={s.hero__image__main}></div>
+        <div className={classNames(s.hero__image__main, s.active)}></div>
         <div className={s.hero__image__left}></div>
         <div className={s.hero__image__right}></div>
       </div>
