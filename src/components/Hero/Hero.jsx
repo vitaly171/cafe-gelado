@@ -36,19 +36,19 @@ export default function Hero() {
               </a>
             </li>
           </ul>
-          <div className={s.extra_info}>
+          <div className={classNames(s.extra_info, s.active)}>
             <p className={s.extra_info__text}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <a className={classNames(s.extra_info__link, s.btn_open)} href="/">
+            <a className={classNames(s.btn_open, s.extra_info__link)} href="/">
               <svg className={s.btn_open__icon}>
                 <use href={`${Icons}#link-arrow`}></use>
               </svg>
             </a>
           </div>
         </div>
-        <ul className={s.store_list}>
+        <ul className={classNames(s.store_list, s.active)}>
           <li className={s.store_list__item}>
             <div className={s.store_list__wrapper}>
               <p className={classNames(s.store_list__number, s.counter)}>16</p>
