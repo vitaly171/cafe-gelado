@@ -8,16 +8,20 @@ export default function Hero() {
     <section className={s.hero}>
       <div className={classNames(s.container, s.container__hero)}>
         <div className={s.hero__wrapper}>
-          <h1 className={s.hero__title}>
+          <h1 className={classNames(s.hero__title, s.active)}>
             ice cream
             <br />
-            <span className={s.hero__title__next_row}>made with</span>
-            <span className={s.hero__title__accent}>passion</span>
+            <span className={classNames(s.hero__title__next_row, s.active)}>
+              made with
+            </span>
+            <span className={classNames(s.hero__title__accent, s.active)}>
+              passion
+            </span>
           </h1>
-          <ul className={s.hero_links}>
+          <ul className={classNames(s.hero_links, s.active)}>
             <li className={s.hero_links__item}>
               <a
-                className={classNames(s.btn, s.btn__secondary, s.btn__hero)}
+                className={classNames(s.btn, s.btn__hero, s.btn__secondary)}
                 href="#products"
               >
                 Products
@@ -25,7 +29,7 @@ export default function Hero() {
             </li>
             <li className={s.hero_links__item}>
               <a
-                className={classNames(s.btn, s.btn__primary, s.btn__hero)}
+                className={classNames(s.btn, s.btn__hero, s.btn__primary)}
                 href="#about"
               >
                 How it’s made?
