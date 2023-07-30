@@ -6,3 +6,127 @@
   padding-top: 130px;
   padding-bottom: 120px;
 }
+
+.container {
+  max-width: 1280px;
+  padding-left: 114px;
+  padding-right: 114px;
+  margin-left: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
+.section__label {
+  font-size: 30px;
+  line-height: 1.13;
+  font-family: Titan One, sans-serif;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section__title {
+  margin-bottom: 260px;
+  text-align: center;
+  transform: translateY(120px);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s,
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  font-size: 58px;
+  line-height: 1.14;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Titan One, sans-serif;
+  color: #d41443;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: -10px;
+}
+
+.products__item {
+  flex-basis: calc(33.33333% - 20px);
+  margin: 10px;
+  max-width: 330px;
+}
+
+.products.active .products__item:first-child {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.product {
+  position: relative;
+  text-align: center;
+  border-radius: 24px;
+}
+
+.product__ice_cream {
+  background-color: #ffb8ca;
+}
+
+.product__ice_cream::before {
+  content: "";
+  display: inline-flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 335px;
+  height: 335px;
+  top: -40%;
+  background-image: url(/src/img/products/desktop/products_img1_desktop_@1x.png);
+}
+
+.product__content {
+  padding: 163px 44px 50px;
+}
+.product__title {
+  position: relative;
+  display: inline-flex;
+  margin-bottom: 70px;
+  font-family: Titan One, sans-serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.product__title::after {
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 26px;
+  height: 6px;
+  background-image: url(/src/img/products/midle-circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+
+.product__text {
+  font-size: 16px;
+  line-height: 1.76;
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.active {
+  transform: translate(0);
+  opacity: 1;
+}

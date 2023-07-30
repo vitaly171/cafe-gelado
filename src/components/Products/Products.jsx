@@ -10,10 +10,16 @@ export default function Products() {
       id="products"
     >
       <div className={classNames(s.container, s.container__products)}>
-        <p className={s.section__label}>
+        <p className={classNames(s.section__label, s.active)}>
           <span className={s.counter}>100</span>% natural
         </p>
-        <h2 className={classNames(s.section__title, s.section__title__margin)}>
+        <h2
+          className={classNames(
+            s.section__title,
+            s.section__title__margin,
+            s.active
+          )}
+        >
           products
         </h2>
         <ul className={s.products}>
