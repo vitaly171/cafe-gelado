@@ -1,6 +1,7 @@
 import s from "./About.module.css";
 import React from "react";
 import classNames from "classnames";
+import Icons from "../../img/icons.svg";
 
 export default function About() {
   return (
@@ -43,33 +44,38 @@ export default function About() {
             />
           </picture>
 
-          <div className="about__box about__box--margin">
-            <h3 className="about__box-title about__box-title--margin">
+          <div className={classNames(s.about__box, s.about__box__margin)}>
+            <h3
+              className={classNames(
+                s.about__box_title,
+                s.about__box_title__margin
+              )}
+            >
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
               justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
               erat at justo fringilla.
             </h3>
-            <p className="about__box-descr">
+            <p className={s.about__box_descr}>
               Curabitur lacinia enim at ex blandit, vel pellentesque odio
               elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
               euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
               Cras massa nibh, tincidunt.
-              <span className="about__box-descr--p">
+              <span className={s.about__box_descr__p}>
                 Aliquam erat volutpat. Aenean accumsan.{" "}
               </span>
             </p>
             <button
-              className="btn btn--primary btn--about"
+              className={classNames(s.btn, s.btn__primary, s.btn__about)}
               type="button"
               data-modal-open-readmore
             >
               Read more
               <svg
-                className="btn__icon btn__icon--append"
+                className={classNames(s.btn__icon, s.btn__icon__append)}
                 width="10"
                 height="10"
               >
-                <use href="./images/icons.svg#button-arrow"></use>
+                <use href={`${Icons}#button-arrow`}></use>
               </svg>
             </button>
           </div>
