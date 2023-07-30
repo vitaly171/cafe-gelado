@@ -1,0 +1,8 @@
+.section {
+  display: block;
+}
+
+.section__products {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}

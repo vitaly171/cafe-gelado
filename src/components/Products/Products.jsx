@@ -1,51 +1,69 @@
 import s from "./Products.module.css";
 import React from "react";
-import Icons from "../../img/icons.svg";
+import classNames from "classnames";
 
 export default function Products() {
   return (
-    <section class="section section--products" id="products">
-      <div class="container container__products">
-        <p class="section__label _anim-items _anim-no-hide">
-          <span class="counter">100</span>% natural
+    <section
+      className={classNames(s.section, s.section__products)}
+      id="products"
+    >
+      <div className={classNames(s.container, s.container__products)}>
+        <p className={s.section__label}>
+          <span className={s.counter}>100</span>% natural
         </p>
-        <h2 class="section__title section__title--margin _anim-items _anim-no-hide">
+        <h2 className={classNames(s.section__title, s.section__title__margin)}>
           products
         </h2>
-        <ul class="products _anim-items _anim-no-hide">
-          <li class="products__item">
-            <article class="product product--ice-cream">
-              <div class="product__content">
-                <h3 class="product__title">ice cream</h3>
-                <p class="product__text product__text--margin">
+        <ul className={s.products}>
+          <li className={s.products__item}>
+            <article className={classNames(s.product, s.product__ice_cream)}>
+              <div className={s.product__content}>
+                <h3 className={s.product__title}>ice cream</h3>
+                <p
+                  className={classNames(
+                    s.product__text,
+                    s.product__text__margin
+                  )}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
-                  <span class="product__addition">
+                  <span className={s.product__addition}>
                     . dolore magna aliqua facilisis.
                   </span>
                 </p>
                 <button
-                  class="btn-open btn-open--centered"
+                  className={classNames(s.btn_open, s.btn_open__centered)}
                   type="button"
                   aria-expanded="false"
                   data-modal-open-ice-cream
                 >
-                  <svg class="btn-open__icon" width="40" height="40">
+                  <svg className={s.btn_open__icon} width="40" height="40">
                     <use href="images/icons.svg#link-arrow"></use>
                   </svg>
                 </button>
                 <div
-                  class="
-                product__description product__description--ice-cream product__description--is-hidden
-              "
+                  className={classNames(
+                    s.product__description,
+                    s.product__description__ice_cream,
+                    s.product__description__is_hidden
+                  )}
                   data-modal-ice-cream
                 >
-                  <button class="product__btn-close" data-modal-close-ice-cream>
+                  <button
+                    className={s.product__btn_close}
+                    data-modal-close-ice-cream
+                  >
                     <svg width="20" height="20">
                       <use href="images/icons.svg#close-menu"></use>
                     </svg>
                   </button>
-                  <p class="product__text product__text--margin-description">
+                  <p
+                    className={classNames(
+                      s.product__text,
+                      s.product__text__margin_description
+                    )}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere repellat placeat corrupti aspernatur commodi
                     voluptate quaerat iure provident. Enim, sint?
@@ -54,44 +72,54 @@ export default function Products() {
               </div>
             </article>
           </li>
-          <li class="products__item">
-            <article class="product product--ice-coffee">
-              <div class="product__content">
-                <h3 class="product__title">ice coffee</h3>
-                <p class="product__text product__text--margin">
+          <li className={s.products__item}>
+            <article className={classNames(s.product, s.product__ice_coffee)}>
+              <div className={s.product__content}>
+                <h3 className={s.product__title}>ice coffee</h3>
+                <p
+                  className={classNames(
+                    s.product__text,
+                    s.product__text__margin
+                  )}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
-                  <span class="product__addition">
+                  <span className={s.product__addition}>
                     . dolore magna aliqua facilisis.
                   </span>
                 </p>
                 <button
-                  class="btn-open btn-open--centered"
+                  className={classNames(s.btn_open, s.btn_open__centered)}
                   type="button"
                   aria-expanded="false"
                   data-modal-open-ice-coffee
                 >
-                  <svg class="btn-open__icon" width="40" height="40">
+                  <svg className={s.btn_open__icon} width="40" height="40">
                     <use href="images/icons.svg#link-arrow"></use>
                   </svg>
                 </button>
                 <div
-                  class="
-                product__description
-                product__description--ice-coffee
-                product__description--is-hidden
-              "
+                  className={classNames(
+                    s.product__description,
+                    s.product__description__ice_coffee,
+                    s.product__description__is_hidden
+                  )}
                   data-modal-ice-coffee
                 >
                   <button
-                    class="product__btn-close"
+                    className={s.product__btn_close}
                     data-modal-close-ice-coffee
                   >
                     <svg width="20" height="20">
                       <use href="images/icons.svg#close-menu"></use>
                     </svg>
                   </button>
-                  <p class="product__text product__text--margin-description">
+                  <p
+                    className={classNames(
+                      s.product__text,
+                      s.product__text__margin_description
+                    )}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere repellat placeat corrupti aspernatur commodi
                     voluptate quaerat iure provident. Enim, sint?
@@ -100,44 +128,54 @@ export default function Products() {
               </div>
             </article>
           </li>
-          <li class="products__item">
-            <article class="product product--milkshakes">
-              <div class="product__content">
-                <h3 class="product__title">milkshakes</h3>
-                <p class="product__text product__text--margin">
+          <li className={s.products__item}>
+            <article className={classNames(s.product, s.product__milkshakes)}>
+              <div className={s.product__content}>
+                <h3 className={s.product__title}>milkshakes</h3>
+                <p
+                  className={classNames(
+                    s.product__text,
+                    s.product__text__margin
+                  )}
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et
-                  <span class="product__addition">
+                  <span className={s.product__addition}>
                     . dolore magna aliqua facilisis.
                   </span>
                 </p>
                 <button
-                  class="btn-open btn-open--centered"
+                  className={classNames(s.btn_open, s.btn_open__centered)}
                   type="button"
                   aria-expanded="false"
                   data-modal-open-milkshakes
                 >
-                  <svg class="btn-open__icon" width="40" height="40">
+                  <svg className={s.btn_open__icon} width="40" height="40">
                     <use href="images/icons.svg#link-arrow"></use>
                   </svg>
                 </button>
                 <div
-                  class="
-                product__description
-                product__description--milkshakes
-                product__description--is-hidden
-              "
+                  className={classNames(
+                    s.product__description,
+                    s.product__description__milkshakes,
+                    s.product__description__is_hidden
+                  )}
                   data-modal-milkshakes
                 >
                   <button
-                    class="product__btn-close"
+                    className={s.product__btn_close}
                     data-modal-close-milkshakes
                   >
                     <svg width="20" height="20">
                       <use href="images/icons.svg#close-menu"></use>
                     </svg>
                   </button>
-                  <p class="product__text product__text--margin-description">
+                  <p
+                    className={classNames(
+                      s.product__text,
+                      s.product__text__margin_description
+                    )}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Facere repellat placeat corrupti aspernatur commodi
                     voluptate quaerat iure provident. Enim, sint?
