@@ -1,6 +1,7 @@
 import s from "./Products.module.css";
 import React from "react";
 import classNames from "classnames";
+import Icons from "../../img/icons.svg";
 
 export default function Products() {
   return (
@@ -39,7 +40,7 @@ export default function Products() {
                   data-modal-open-ice-cream
                 >
                   <svg className={s.btn_open__icon} width="40" height="40">
-                    <use href="images/icons.svg#link-arrow"></use>
+                    <use href={`${Icons}#link-arrow`}></use>
                   </svg>
                 </button>
                 <div
@@ -55,7 +56,7 @@ export default function Products() {
                     data-modal-close-ice-cream
                   >
                     <svg width="20" height="20">
-                      <use href="images/icons.svg#close-menu"></use>
+                      <use href={`${Icons}#close-menu`}></use>
                     </svg>
                   </button>
                   <p
@@ -95,7 +96,7 @@ export default function Products() {
                   data-modal-open-ice-coffee
                 >
                   <svg className={s.btn_open__icon} width="40" height="40">
-                    <use href="images/icons.svg#link-arrow"></use>
+                    <use href={`${Icons}#link-arrow`}></use>
                   </svg>
                 </button>
                 <div
@@ -111,7 +112,7 @@ export default function Products() {
                     data-modal-close-ice-coffee
                   >
                     <svg width="20" height="20">
-                      <use href="images/icons.svg#close-menu"></use>
+                      <use href={`${Icons}#close-menu`}></use>
                     </svg>
                   </button>
                   <p
@@ -151,7 +152,7 @@ export default function Products() {
                   data-modal-open-milkshakes
                 >
                   <svg className={s.btn_open__icon} width="40" height="40">
-                    <use href="images/icons.svg#link-arrow"></use>
+                    <use href={`${Icons}#link-arrow`}></use>
                   </svg>
                 </button>
                 <div
@@ -167,7 +168,7 @@ export default function Products() {
                     data-modal-close-milkshakes
                   >
                     <svg width="20" height="20">
-                      <use href="images/icons.svg#close-menu"></use>
+                      <use href={`${Icons}#close-menu`}></use>
                     </svg>
                   </button>
                   <p
