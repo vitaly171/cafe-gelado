@@ -63,8 +63,8 @@ export default function Hero() {
           </li>
         </ul>
         <div className={classNames(s.hero__image__main, s.active)}></div>
-        <div className={s.hero__image__left}></div>
-        <div className={s.hero__image__right}></div>
+        <div className={classNames(s.hero__image__left, s.active)}></div>
+        <div className={classNames(s.hero__image__right, s.active)}></div>
       </div>
     </section>
   );

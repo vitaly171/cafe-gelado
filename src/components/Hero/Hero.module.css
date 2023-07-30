@@ -128,7 +128,6 @@
   width: 200px;
   font-size: 14px;
   line-height: 1.4;
-  margin-left: 180px;
 }
 
 .btn_open {
@@ -223,6 +222,32 @@
   left: 45%;
   width: 236px;
   height: 557px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__image__left {
+  background-image: url(../../img/hero/desktop/hero3_desktop_@1x.png);
+  bottom: -11px;
+  left: 77px;
+  width: 188px;
+  height: 191px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__image__right {
+  background-image: url(../../img/hero/desktop/hero2_desktop_@1x.png);
+  right: 109px;
+  bottom: -56px;
+  width: 293px;
+  height: 232px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
