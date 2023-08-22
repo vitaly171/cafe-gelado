@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Products from "./components/Products/Products";
 import About from "./components/About/About";
 import Advantages from "./components/Advantages/Advantages";
+import Gallery from "./components/Gellery/Gallery";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Products />
         <About />
         <Advantages />
+        <Gallery />
       </main>
     </>
   );
