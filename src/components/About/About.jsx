@@ -7,10 +7,22 @@ export default function About() {
   return (
     <section className={s.about} id="about">
       <div className={s.container}>
-        <p className={classNames(s.about__label, s.about__label__margin)}>
+        <p
+          className={classNames(
+            s.about__label,
+            s.about__label__margin,
+            s.active
+          )}
+        >
           tradition and love
         </p>
-        <h2 className={classNames(s.about__title, s.about__title__margin)}>
+        <h2
+          className={classNames(
+            s.about__title,
+            s.about__title__margin,
+            s.active
+          )}
+        >
           how it’s made?
         </h2>
         <div className={s.about__card}>
