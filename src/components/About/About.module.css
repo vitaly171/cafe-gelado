@@ -95,6 +95,40 @@
   display: block;
   margin-top: 27px;
 }
+
+.btn {
+  min-width: 63px;
+  height: auto;
+  min-height: 24px;
+  padding: 12px 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  line-height: 1.31;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn__primary {
+  color: #d41443;
+  background-color: #fff;
+}
+
+.btn__icon {
+  fill: currentColor;
+  width: 10px;
+  height: 10px;
+}
+
+.btn__icon__append {
+  margin-left: 13px;
+}
+
 .active {
   transform: translate(0);
   opacity: 1;
