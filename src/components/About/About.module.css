@@ -71,6 +71,30 @@
   margin: 55px 0 0 74px;
 }
 
+.about__box_title {
+  line-height: 1.76;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+.about__box_title__margin {
+  margin-bottom: 35px;
+}
+
+.about__box_descr {
+  font-size: 14px;
+  line-height: 1.94;
+  letter-spacing: 0.04em;
+  margin-bottom: 45px;
+  font-weight: 500;
+  color: #907e82;
+}
+
+.about__box_descr__p {
+  display: block;
+  margin-top: 27px;
+}
 .active {
   transform: translate(0);
   opacity: 1;
