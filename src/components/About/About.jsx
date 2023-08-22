@@ -32,7 +32,7 @@ export default function About() {
                 s.about__pictures,
                 s.about__pictures__margin
               )}
-              src={require(`../../img/about/desktop/about_img1_desktop_@2x.png`)}
+              src={require(`../../img/about/desktop/about_img1_desktop_@1x.png`)}
               alt="Milk carafe on the background of a cow"
               width="280"
             />

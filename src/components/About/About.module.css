@@ -57,6 +57,7 @@
 
 .about__pictures {
   display: block;
+  width: 100%;
   max-width: 100%;
 }
 
