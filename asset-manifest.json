@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/cafe-gelado/static/css/main.b8b8bb89.css",
-    "main.js": "/cafe-gelado/static/js/main.ec79820c.js",
+    "main.css": "/cafe-gelado/static/css/main.7a4a6a52.css",
+    "main.js": "/cafe-gelado/static/js/main.a905e80f.js",
+    "static/media/about_img1_desktop_@1x.png": "/cafe-gelado/static/media/about_img1_desktop_@1x.8d3b5c6071d76c2d6d64.png",
     "static/media/hero.png": "/cafe-gelado/static/media/hero.314158101bcc7f8df43f.png",
     "static/media/products_img1_desktop_@1x.png": "/cafe-gelado/static/media/products_img1_desktop_@1x.6a73d98ca346bf26dc84.png",
     "static/media/products_img3_desktop_@1x.png": "/cafe-gelado/static/media/products_img3_desktop_@1x.683747c34763b5af0489.png",
+    "static/media/about_img2_desktop_@1x.png": "/cafe-gelado/static/media/about_img2_desktop_@1x.6aeb446bb42f47279ae7.png",
     "static/media/products_img2_desktop_@1x.png": "/cafe-gelado/static/media/products_img2_desktop_@1x.c9529227ba0d7b831afc.png",
     "static/media/hero2_desktop_@1x.png": "/cafe-gelado/static/media/hero2_desktop_@1x.6381033a49bba611a003.png",
     "static/media/hero3_desktop_@1x.png": "/cafe-gelado/static/media/hero3_desktop_@1x.d92dd93f4f8f229f4cc2.png",
     "static/media/icons.svg": "/cafe-gelado/static/media/icons.454ff5649354c021beac53ae854132af.svg",
+    "static/media/advantages_icon2.svg": "/cafe-gelado/static/media/advantages_icon2.be48dc3352480ce8267c.svg",
+    "static/media/advantages_icon3.svg": "/cafe-gelado/static/media/advantages_icon3.5de0e84f37ebf2a6bf6e.svg",
+    "static/media/advantages_icon1.svg": "/cafe-gelado/static/media/advantages_icon1.596d79985153fc0a94bd.svg",
     "index.html": "/cafe-gelado/index.html",
     "static/media/midle-circle.svg": "/cafe-gelado/static/media/midle-circle.3fdb0ef29f656c38ab6f.svg",
-    "main.b8b8bb89.css.map": "/cafe-gelado/static/css/main.b8b8bb89.css.map",
-    "main.ec79820c.js.map": "/cafe-gelado/static/js/main.ec79820c.js.map"
+    "main.7a4a6a52.css.map": "/cafe-gelado/static/css/main.7a4a6a52.css.map",
+    "main.a905e80f.js.map": "/cafe-gelado/static/js/main.a905e80f.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8b8bb89.css",
-    "static/js/main.ec79820c.js"
+    "static/css/main.7a4a6a52.css",
+    "static/js/main.a905e80f.js"
   ]
 }
