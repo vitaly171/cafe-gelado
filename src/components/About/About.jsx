@@ -27,30 +27,12 @@ export default function About() {
         </h2>
         <div className={s.about__card}>
           <picture>
-            <source
-              srcset="
-            /images/about/desktop/about_img1_desktop_@1x.png 1x,
-            /images/about/desktop/about_img1_desktop_@2x.png 2x
-          "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-            /images/about/tablet/about_img1_tablet_@1x.png 1x,
-            /images/about/tablet/about_img1_tablet_@2x.png 2x
-          "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-            /images/about/mobile/about_img1_mobile_@1x.png 1x,
-            /images/about/mobile/about_img1_mobile_@2x.png 2x
-          "
-              media="(min-width: 320px)"
-            />
             <img
-              className="about__pictures about__pictures--margin"
-              src="/images/about/desktop/about_img1_desktop_@1x.png"
+              className={classNames(
+                s.about__pictures,
+                s.about__pictures__margin
+              )}
+              src={require(`../../img/about/desktop/about_img1_desktop_@2x.png`)}
               alt="Milk carafe on the background of a cow"
               width="280"
             />
