@@ -29,3 +29,41 @@
   display: flex;
   justify-content: center;
 }
+.gallery__item {
+  padding: 0 4px;
+}
+
+.gallery__img {
+  width: 100%;
+  max-width: 139.1304347826px;
+  margin: 8px 0;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(212, 20, 67, 0.1);
+  transform: scale(1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__img__1x {
+  width: 50%;
+}
+.gallery__img__2x {
+  max-width: 278.2608695652px;
+}
+
+.gallery__item__pt1 {
+  padding-top: 50px;
+}
+.gallery__item__pt2 {
+  padding-top: 85.3333333333px;
+}
+.gallery__item__pt3 {
+  padding-top: 100px;
+}
+
+.gallery__item__pt4 {
+  padding-top: 140.0437636761px;
+}
+.gallery__item__pt5 {
+  padding-top: 155.1515151515px;
+}
