@@ -1,5 +1,6 @@
 import s from "./Reviews.module.css";
 import React from "react";
+import ReactDOM from "react-dom";
 import classNames from "classnames";
 
 export default function Reviews() {
@@ -8,7 +9,7 @@ export default function Reviews() {
       <div className={s.container}>
         <h2 className={s.visually_hidden}>Customer reviews</h2>
 
-        <div className={classNames(s.reviews__slider, s.slider)}>
+        {/* <div className={classNames(s.reviews__slider, s.slider)}>
           <article>
             <img
               className={classNames(s.reviews__photo, s.reviews__photo__margin)}
@@ -45,7 +46,7 @@ export default function Reviews() {
             </h3>
           </article>
 
-          {/* <article>
+          <article>
             <img
               className={
                 (classNames = (s.reviews__photo, s.reviews__photo__margin))
@@ -119,8 +120,8 @@ export default function Reviews() {
             >
               Olivia, Chicago
             </h3>
-          </article> */}
-        </div>
+          </article>
+        </div> */}
       </div>
     </section>
   );
